@@ -8,7 +8,7 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f8e2;
+  background-color: #e7e5dd;
   color: #333;
 }
 
@@ -22,7 +22,6 @@ a {
   display: flex;
   justify-content: space-between;
   height: 70px;
-  background-color: #f4f4f4;
   padding: 15px;
 }
 
@@ -46,4 +45,41 @@ header #nav-bar ul li {
 header #nav-bar ul li .nav-link {
   padding: 0 20px;
   font-size: 18px;
+}
+
+/* formulario */
+#form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#form-section h2 {
+  font-weight: 100;
+  margin-top: 20px;
+  padding: 15px 0;
+}
+#form-section #form #email {
+  display: block;
+  width: 290px;
+  height: 30px;
+  margin: 10px 0;
+}
+#form-section #form #submit {
+  margin-left: 90px;
+  width: 110px;
+  height: 30px;
+  background-color: #56514b;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+  margin-top: 5px;
+}
+
+#form-section #form #submit:hover {
+  cursor: pointer;
+  background-color: #999990;
+  color: #56514b;
 }
