@@ -22,7 +22,10 @@ a {
   display: flex;
   justify-content: space-between;
   height: 70px;
+  width: 100%;
   padding: 15px;
+  position: fixed;
+  background-color: #e7e5dd;
 }
 
 #header #logo {
@@ -82,4 +85,37 @@ header #nav-bar ul li .nav-link {
   cursor: pointer;
   background-color: #999990;
   color: #56514b;
+}
+
+/*Feature section */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  width: 80vw;
+  height: 390px;
+  margin: 30px auto 0;
+  text-align: justify;
+}
+.flex-container .fa-fire {
+  margin-right: 21px;
+}
+.flex-container .flex-items {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container .flex-items .feature {
+  margin-left: 10px;
+}
+
+/*Video section*/
+
+#video-section {
+  width: 100%;
+}
+
+#video-section #video {
+  display: block;
+  margin: 20px auto;
 }
