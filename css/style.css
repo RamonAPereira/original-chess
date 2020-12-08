@@ -26,6 +26,8 @@ a {
   padding: 15px;
   position: fixed;
   background-color: #e7e5dd;
+  top: 0;
+  left: 0;
 }
 
 #header #logo {
@@ -111,11 +113,122 @@ header #nav-bar ul li .nav-link {
 
 /*Video section*/
 
-#video-section {
+#works {
   width: 100%;
 }
 
-#video-section #video {
+#works #video {
   display: block;
   margin: 20px auto;
+}
+
+/*Cards*/
+#pricing .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#pricing .container .cards {
+  border: #333 solid 1px;
+  width: 350px;
+  margin-bottom: 35px;
+}
+
+#pricing .container .cards ul {
+  list-style: none;
+}
+
+#pricing .container .cards h3 {
+  background-color: #bdbbad;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+#pricing .container .cards h2 {
+  margin-bottom: 20px;
+}
+
+#pricing .container .cards button {
+  width: 110px;
+  height: 30px;
+  background-color: #56514b;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px;
+  margin: 20px 0;
+}
+
+#pricing .container .cards button:hover {
+  cursor: pointer;
+  background-color: #999990;
+  color: #56514b;
+}
+
+#footer {
+  background-color: #bdbbad;
+  width: 90%;
+  height: 90px;
+  margin: 0 auto;
+}
+
+#footer .footer-content {
+  float: right;
+}
+
+#footer ul {
+  display: flex;
+  width: 300px;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer ul li {
+  padding: 10px 20px;
+}
+
+#footer p {
+  padding: ;
+}
+
+/*responsividade*/
+
+@media (max-width: 768px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+  }
+  #header #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #form-section {
+    margin-top: 140px;
+  }
+
+  #features .flex-items {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #features .flex-items p {
+    text-align: justify;
+  }
+  #features i {
+    display: none;
+  }
+  #pricing .container {
+    flex-direction: column;
+  }
 }
